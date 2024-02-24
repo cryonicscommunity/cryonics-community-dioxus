@@ -24,6 +24,26 @@ pub fn Home(cx: Scope) -> Element {
   }
   hr { }
   h2 {
+    "Related Articles"
+  }
+  ul {
+  li {
+  a {
+    href: "https://david-wallace-croft.blogspot.com/2024/02/cryonics-community.html",
+    target: "_blank",
+  "Cryonics Community"
+  }
+  }
+  li {
+  a {
+    href: "https://www.alcor.org/docs/cryonics-magazine-2021-02.pdf",
+    target: "_blank",
+  "A Look Back: Attempts to Establish a Cryonics Community"
+  }
+  }
+  }
+  hr { }
+  h2 {
     "Related Websites"
   }
   ul {
@@ -39,6 +59,13 @@ pub fn Home(cx: Scope) -> Element {
     href: "https://www.crinco.org/",
     target: "_blank",
   "Cryonics Industry Consortium"
+  }
+  }
+  li {
+  a {
+    href: "https://discord.gg/cryosphere",
+    target: "_blank",
+  "Cryosphere Discord Server"
   }
   }
   li {
