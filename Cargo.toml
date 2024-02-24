@@ -1,0 +1,12 @@
+
+[package]
+authors = ["Cryonics Community Contributors"]
+description = "Cryonics Community website implemented using Dioxus"
+edition = "2021"
+homepage = "https://www.CryonicsCommunity.org/"
+license = "MIT"
+name = "project-name"
+publish = false
+readme = "README.md"
+repository = "https://github.com/cryonicscommunity/cryonics-community-dioxus"
+version = "0.0.0-SNAPSHOT"
