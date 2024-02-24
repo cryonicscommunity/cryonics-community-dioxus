@@ -1,7 +1,8 @@
-use super::components::colophon::Colophon;
-use super::components::home::Home;
-use super::components::page_not_found::PageNotFound;
-use super::components::template::Template;
+use crate::components::about::About;
+use crate::components::colophon::Colophon;
+use crate::components::home::Home;
+use crate::components::page_not_found::PageNotFound;
+use crate::components::template::Template;
 use dioxus::prelude::*;
 use dioxus_router::prelude::*;
 use serde::{Deserialize, Serialize};
@@ -11,6 +12,8 @@ pub enum Route {
   #[layout(Template)]
   #[route("/")]
   Home {},
+  #[route("/about")]
+  About {},
   #[route("/colophon")]
   Colophon {},
   #[end_layout]

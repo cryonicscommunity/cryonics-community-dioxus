@@ -1,15 +1,41 @@
-use super::high_five::HighFive;
-use ::dioxus::prelude::*;
+use dioxus::prelude::*;
 
 #[allow(non_snake_case)]
 pub fn Home(cx: Scope) -> Element {
   render! {
-    h1 {
-      "Home Page"
-    }
-    p {
-      "This line is a placeholder for home page content."
-    }
-    HighFive { }
+  main {
+    class: "app-home",
+  h1 {
+    "Cryonics Community"
+  }
+  hr { }
+  ul {
+
+  li {
+  a {
+    href: "https://www.meetup.com/cryonicscommunity/",
+    target: "_blank",
+  "Cryonics Community Dallas"
+  }
+  }
+
+  li {
+  a {
+    href: "https://www.crinco.org/",
+    target: "_blank",
+  "Cryonics Industry Consortium"
+  }
+  }
+
+  li {
+  a {
+    href: "https://www.cryothanasia.org/",
+    target: "_blank",
+  "Cryothanasia"
+  }
+  }
+
+  }
+  }
   }
 }
