@@ -9,8 +9,24 @@ pub fn Home(cx: Scope) -> Element {
     "Cryonics Community"
   }
   hr { }
+  h2 {
+    "Discussion List"
+  }
+  p {
+  r#"Help shape the future of the Cryonics Community by joining our Google
+  Groups discussion list:"#
+  br { }
+  a {
+    href: "https://groups.google.com/g/cryonicscommunity/",
+    target: "_blank",
+  "https://groups.google.com/g/cryonicscommunity/"
+  }
+  }
+  hr { }
+  h2 {
+    "Related Websites"
+  }
   ul {
-
   li {
   a {
     href: "https://www.meetup.com/cryonicscommunity/",
@@ -18,7 +34,6 @@ pub fn Home(cx: Scope) -> Element {
   "Cryonics Community Dallas"
   }
   }
-
   li {
   a {
     href: "https://www.crinco.org/",
@@ -26,7 +41,6 @@ pub fn Home(cx: Scope) -> Element {
   "Cryonics Industry Consortium"
   }
   }
-
   li {
   a {
     href: "https://www.cryothanasia.org/",
@@ -34,7 +48,6 @@ pub fn Home(cx: Scope) -> Element {
   "Cryothanasia"
   }
   }
-
   li {
   a {
     href: "https://www.organsfor.life/",
@@ -42,7 +55,6 @@ pub fn Home(cx: Scope) -> Element {
   "Organs for Life"
   }
   }
-
   }
   }
   }
