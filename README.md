@@ -1,5 +1,10 @@
 # Cryonics Community
 
+[![MIT licensed][mit-badge]][mit-url]
+
+[mit-badge]: https://img.shields.io/badge/license-MIT-blue.svg
+[mit-url]: https://github.com/cryonicscommunity/cryonics-community-dioxus/blob/main/LICENSE.txt
+
 - Cryonics Community website implementation using Dioxus
 - Makes a Content Delivery Network (CDN)-compatible static HTML distribution
   - Includes static prerendering with client-side hydration
