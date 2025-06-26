@@ -6,7 +6,7 @@ pub fn Footer(cx: Scope) -> Element {
   footer {
     class: "app-footer",
   hr { }
-  "Cryonics Community © 2024 "
+  "Cryonics Community © 2025 "
   a {
     href: "https://github.com/cryonicscommunity",
     target: "_blank",
