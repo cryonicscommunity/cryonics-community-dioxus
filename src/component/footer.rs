@@ -1,12 +1,13 @@
-use dioxus::prelude::*;
+use ::dioxus::prelude::*;
 
 #[allow(non_snake_case)]
-pub fn Footer(cx: Scope) -> Element {
-  render! {
+#[component]
+pub fn Footer() -> Element {
+  rsx! {
   footer {
     class: "app-footer",
   hr { }
-  "Cryonics Community © 2024 "
+  "Cryonics Community © 2024-2026 "
   a {
     href: "https://github.com/cryonicscommunity",
     target: "_blank",

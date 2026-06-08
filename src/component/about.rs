@@ -1,8 +1,9 @@
-use dioxus::prelude::*;
+use ::dioxus::prelude::*;
 
 #[allow(non_snake_case)]
-pub fn About(cx: Scope) -> Element {
-  render! {
+#[component]
+pub fn About() -> Element {
+  rsx! {
   main {
     class: "app-colophon",
   h1 { "About" }

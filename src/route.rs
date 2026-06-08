@@ -1,13 +1,10 @@
-use crate::components::about::About;
-use crate::components::colophon::Colophon;
-use crate::components::home::Home;
-use crate::components::page_not_found::PageNotFound;
-use crate::components::template::Template;
-use dioxus::prelude::*;
-use dioxus_router::prelude::*;
-use serde::{Deserialize, Serialize};
+use super::component::about::About;
+use super::component::colophon::Colophon;
+use super::component::home::Home;
+use super::component::template::Template;
+use ::dioxus::prelude::*;
 
-#[derive(Clone, Debug, Deserialize, PartialEq, Routable, Serialize)]
+#[derive(Clone, Debug, PartialEq, Routable)]
 pub enum Route {
   #[layout(Template)]
   #[route("/")]
@@ -16,9 +13,4 @@ pub enum Route {
   About {},
   #[route("/colophon")]
   Colophon {},
-  #[end_layout]
-  #[route("/:..route")]
-  PageNotFound {
-    route: Vec<String>,
-  },
 }

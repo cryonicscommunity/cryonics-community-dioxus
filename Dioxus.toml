@@ -1,20 +1,49 @@
 [application]
-asset_dir = "assets"
-default_platform = "web"
-name = "cryonics-community-dioxus"
+
+# Web `build` & `serve` dist path
 out_dir = "dist"
 
+# resource (static) file folder
+asset_dir = "public"
+
+[web.wasm_opt]
+# The level wasm-opt should target. z is the smallest. 4 is the fastest.
+level = "4"
+
 [web.app]
+
+# HTML title tag content
 title = "Cryonics Community"
 
 [web.watcher]
-reload_html = true
-watch_path = ["src", "assets"]
 
-[web.resource]
-style = ["/stylesheet.css"]
-script = []
+index_on_404 = true
 
-[web.resource.dev]
-script = []
-style = []
+watch_path = ["src", "examples"]
+
+[bundle]
+# Bundle identifier
+identifier = "io.github.cryonics-community-dioxus"
+
+# Bundle publisher
+publisher = "cryonics-community-dioxus"
+
+# Bundle icon
+icon = ["icons/icon.png"]
+
+# Bundle resources
+resources = ["public/*"]
+
+# Bundle copyright
+copyright = ""
+
+# Bundle category
+category = "Utility"
+
+# Bundle short description
+short_description = "An amazing dioxus application."
+
+# Bundle long description
+long_description = """
+An amazing dioxus application.
+"""
