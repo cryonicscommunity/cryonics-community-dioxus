@@ -8,7 +8,7 @@ name = "cryonics-community-dioxus"
 publish = false
 readme = "README.md"
 repository = "https://github.com/cryonicscommunity/cryonics-community-dioxus"
-version = "0.7.0"
+version = "0.7.1-SNAPSHOT"
 
 [dependencies]
 dioxus = { version = "0.7.9", features = ["fullstack", "router"] }
